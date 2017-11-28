@@ -13,10 +13,14 @@
 		36F1581D1F6703FA002E3E31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36F1581B1F6703FA002E3E31 /* Main.storyboard */; };
 		36F1581F1F6703FA002E3E31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36F1581E1F6703FA002E3E31 /* Assets.xcassets */; };
 		36F158221F6703FA002E3E31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36F158201F6703FA002E3E31 /* LaunchScreen.storyboard */; };
+		907264171FCCEC1900207646 /* mall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 907264161FCCEC1900207646 /* mall.jpg */; };
+		907264191FCCED5E00207646 /* home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 907264181FCCED5E00207646 /* home.jpg */; };
+		90CC40DA1FCCDBAC008A528A /* bikes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90CC40D71FCCDBAC008A528A /* bikes.jpg */; };
+		90CC40DB1FCCDBAC008A528A /* google.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90CC40D81FCCDBAC008A528A /* google.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		36F158121F6703FA002E3E31 /* MyFaves2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFaves2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36F158121F6703FA002E3E31 /* MarcosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarcosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36F158151F6703FA002E3E31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36F158171F6703FA002E3E31 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		36F158191F6703FA002E3E31 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		36F1581E1F6703FA002E3E31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36F158211F6703FA002E3E31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36F158231F6703FA002E3E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		907264161FCCEC1900207646 /* mall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mall.jpg; sourceTree = "<group>"; };
+		907264181FCCED5E00207646 /* home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home.jpg; sourceTree = "<group>"; };
+		90CC40D71FCCDBAC008A528A /* bikes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bikes.jpg; sourceTree = "<group>"; };
+		90CC40D81FCCDBAC008A528A /* google.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = google.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 		36F158091F6703FA002E3E31 = {
 			isa = PBXGroup;
 			children = (
+				90CC40D61FCCDB95008A528A /* images */,
 				36F158141F6703FA002E3E31 /* MyFaves2 */,
 				36F158131F6703FA002E3E31 /* Products */,
 			);
@@ -48,7 +57,7 @@
 		36F158131F6703FA002E3E31 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				36F158121F6703FA002E3E31 /* MyFaves2.app */,
+				36F158121F6703FA002E3E31 /* MarcosApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,12 +76,23 @@
 			path = MyFaves2;
 			sourceTree = "<group>";
 		};
+		90CC40D61FCCDB95008A528A /* images */ = {
+			isa = PBXGroup;
+			children = (
+				907264181FCCED5E00207646 /* home.jpg */,
+				907264161FCCEC1900207646 /* mall.jpg */,
+				90CC40D71FCCDBAC008A528A /* bikes.jpg */,
+				90CC40D81FCCDBAC008A528A /* google.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		36F158111F6703FA002E3E31 /* MyFaves2 */ = {
+		36F158111F6703FA002E3E31 /* MarcosApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36F158261F6703FA002E3E31 /* Build configuration list for PBXNativeTarget "MyFaves2" */;
+			buildConfigurationList = 36F158261F6703FA002E3E31 /* Build configuration list for PBXNativeTarget "MarcosApp" */;
 			buildPhases = (
 				36F1580E1F6703FA002E3E31 /* Sources */,
 				36F1580F1F6703FA002E3E31 /* Frameworks */,
@@ -82,9 +102,9 @@
 			);
 			dependencies = (
 			);
-			name = MyFaves2;
+			name = MarcosApp;
 			productName = MyFaves2;
-			productReference = 36F158121F6703FA002E3E31 /* MyFaves2.app */;
+			productReference = 36F158121F6703FA002E3E31 /* MarcosApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +124,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 36F1580D1F6703FA002E3E31 /* Build configuration list for PBXProject "MyFaves2" */;
+			buildConfigurationList = 36F1580D1F6703FA002E3E31 /* Build configuration list for PBXProject "MarcosApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -117,7 +137,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				36F158111F6703FA002E3E31 /* MyFaves2 */,
+				36F158111F6703FA002E3E31 /* MarcosApp */,
 			);
 		};
 /* End PBXProject section */
@@ -127,8 +147,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90CC40DA1FCCDBAC008A528A /* bikes.jpg in Resources */,
+				907264171FCCEC1900207646 /* mall.jpg in Resources */,
+				907264191FCCED5E00207646 /* home.jpg in Resources */,
 				36F158221F6703FA002E3E31 /* LaunchScreen.storyboard in Resources */,
 				36F1581F1F6703FA002E3E31 /* Assets.xcassets in Resources */,
+				90CC40DB1FCCDBAC008A528A /* google.jpg in Resources */,
 				36F1581D1F6703FA002E3E31 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +294,7 @@
 				DEVELOPMENT_TEAM = LAK6SGQ7Q5;
 				INFOPLIST_FILE = MyFaves2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.RockValleyCollege.MyFaves2;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.RockValleyCollege.MarcosApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -283,7 +307,7 @@
 				DEVELOPMENT_TEAM = LAK6SGQ7Q5;
 				INFOPLIST_FILE = MyFaves2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.RockValleyCollege.MyFaves2;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.RockValleyCollege.MarcosApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -292,7 +316,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		36F1580D1F6703FA002E3E31 /* Build configuration list for PBXProject "MyFaves2" */ = {
+		36F1580D1F6703FA002E3E31 /* Build configuration list for PBXProject "MarcosApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36F158241F6703FA002E3E31 /* Debug */,
@@ -301,13 +325,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36F158261F6703FA002E3E31 /* Build configuration list for PBXNativeTarget "MyFaves2" */ = {
+		36F158261F6703FA002E3E31 /* Build configuration list for PBXNativeTarget "MarcosApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36F158271F6703FA002E3E31 /* Debug */,
 				36F158281F6703FA002E3E31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

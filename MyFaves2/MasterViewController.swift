@@ -15,6 +15,7 @@ class MasterViewController: UITableViewController {
     //var objects = [Any]()
 
      // 2) declare and initialize two arrays
+    var ListOfPhotos:[UIImage] = []
     var ListOfFavs:[String]?
     var FavDetails:[String]?
 
@@ -33,6 +34,11 @@ class MasterViewController: UITableViewController {
         
         // 4) Add items to 2 arrays
         //Menus
+        ListOfPhotos = [
+            UIImage(named: "home.jpg")!,
+            UIImage(named: "bikes.jpg")!,
+            UIImage(named: "google.jpg")!]
+
         ListOfFavs = ["Mall","Biking", "Google"]
         FavDetails = ["http://www.shopcherryvalemall.com/","http://www.bicycling.com", "http://www.google.com"]
         
@@ -92,6 +98,8 @@ class MasterViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
           // 8) Replace code with below code until }
         cell.textLabel!.text = ListOfFavs![indexPath.row]
+        let imagename:UIImage = ListOfPhotos[indexPath.row]
+        cell.imageView?.image = imagename
         return cell
     }
 
