@@ -3,10 +3,8 @@
 //  MyFaves2
 //
 //  Created by Charles Konkol on 9/11/17.
-//  Copyright © 2018 RockValleyCollege. All rights reserved.
-//  Updated 9/9/18
-
-// Follow Instructions in Below Comments
+//  Copyright © 2017 RockValleyCollege. All rights reserved.
+//
 
 import UIKit
 
@@ -37,9 +35,9 @@ class MasterViewController: UITableViewController {
         // 4) Add items to 2 arrays
         //Menus
         ListOfPhotos = [
-            UIImage(named: "home.jpg")!,
+            UIImage(named: "mall.png")!,
             UIImage(named: "bikes.jpg")!,
-            UIImage(named: "google.jpg")!]
+            UIImage(named: "googles.png")!]
 
         ListOfFavs = ["Mall","Biking", "Google"]
         FavDetails = ["http://www.shopcherryvalemall.com/","http://www.bicycling.com", "http://www.google.com"]
@@ -81,6 +79,7 @@ class MasterViewController: UITableViewController {
                 controller.detailItem = object as AnyObject
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
+                controller.navigationItem.title = ListOfFavs![indexPath.row]
             }
         }
     }
@@ -101,7 +100,8 @@ class MasterViewController: UITableViewController {
           // 8) Replace code with below code until }
         cell.textLabel!.text = ListOfFavs![indexPath.row]
         let imagename:UIImage = ListOfPhotos[indexPath.row]
-        cell.imageView?.image = imagename
+        cell.imageView?.image = imagename.resize(maxWidthHeight: 30)
+        cell.detailTextLabel?.text = ">>"
         return cell
     }
 
@@ -123,5 +123,35 @@ class MasterViewController: UITableViewController {
 //    }
 
 
+}
+extension UIImage {
+    
+    func resize(maxWidthHeight : Double)-> UIImage? {
+        
+        let actualHeight = Double(size.height)
+        let actualWidth = Double(size.width)
+        var maxWidth = 0.0
+        var maxHeight = 0.0
+        
+        if actualWidth > actualHeight {
+            maxWidth = maxWidthHeight
+            let per = (100.0 * maxWidthHeight / actualWidth)
+            maxHeight = (actualHeight * per) / 100.0
+        }else{
+            maxHeight = maxWidthHeight
+            let per = (100.0 * maxWidthHeight / actualHeight)
+            maxWidth = (actualWidth * per) / 100.0
+        }
+        
+        let hasAlpha = true
+        let scale: CGFloat = 0.0
+        
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: maxWidth, height: maxHeight), !hasAlpha, scale)
+        self.draw(in: CGRect(origin: .zero, size: CGSize(width: maxWidth, height: maxHeight)))
+        
+        let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+        return scaledImage
+    }
+    
 }
 
