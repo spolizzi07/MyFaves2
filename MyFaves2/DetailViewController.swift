@@ -3,10 +3,8 @@
 //  MyFaves2
 //
 //  Created by Charles Konkol on 9/11/17.
-//  Copyright © 2018 RockValleyCollege. All rights reserved.
-//  Updated 9/9/18
-
-// Follow Instructions in Below Comments
+//  Copyright © 2017 RockValleyCollege. All rights reserved.
+//
 
 import UIKit
 
